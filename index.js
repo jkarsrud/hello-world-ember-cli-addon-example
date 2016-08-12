@@ -2,5 +2,11 @@
 'use strict';
 
 module.exports = {
-  name: 'hello-world'
+  name: 'hello-world',
+
+  includedCommands: function() {
+    return {
+      print: require('lib/commands/print')
+    };
+  }
 };
