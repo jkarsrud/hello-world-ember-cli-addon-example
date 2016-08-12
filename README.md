@@ -1,26 +1,24 @@
 # Hello-world
 
-This README outlines the details of collaborating on this Ember addon.
+This is an example of how to build an Ember-CLI addon that exports commands.
 
 ## Installation
 
 * `git clone` this repository
 * `npm install`
-* `bower install`
+* `npm link`
 
-## Running
+In a regular Ember-CLI project, do the following:
 
-* `ember serve`
-* Visit your app at http://localhost:4200.
+* `npm link hello-world`
+* Add `"hello-world": "latest"` to your package.json `devDependencies`
 
-## Running Tests
+To make sure the addon's command is added correctly, run `ember -h` and look for
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+```
+Available commands from hello-world:
+ember print
+  print 'hello' to the console
+```
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+Verify that it works by running `ember print`
