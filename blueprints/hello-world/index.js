@@ -2,4 +2,4 @@
 
 module.exports = {
   normalizeEntityName: function() {}
-}
+};
