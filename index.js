@@ -6,7 +6,7 @@ module.exports = {
 
   includedCommands: function() {
     return {
-      print: require('lib/commands/print')
+      print: require('./lib/commands/print')
     };
   }
 };
